@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="theta, coventry university">
@@ -30,55 +31,78 @@
 
     <div id="wrapper">
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="feedback.html">Feedback</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="locate.html">Locate Us</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
+        <!-- Nav bar -->
+        <style type="text/css">
+            *.navbar nav{
+                background-color: blue;
+                color: white;
+            }
+        </style>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="http://www.coventry.ac.uk/">Coventry University</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="locate.html">Locate Us</a></li> 
+                        <li><a href="about.html">About</a></li> 
+                    </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- END -->
+        
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>THETA WEBSITE - Coventry University</h1>
+                        <h1>THETA WEBSITE</h1>
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
+    <style type="text/css">
+        .vertical-text {
+            font-size: 20px;
+            transform: rotate(-90deg);
+            transform-origin: bottom right ;
+            float: right;
+        }
+    </style>
     
-    <table class="table table-hover table table-condensed">
+    <table class="table table-hover table table-condensed table table-bordered table-responsive">
         <thead>
-            <tr><th></th><th>09am-10am</th><th>10am-11am</th><th>11am-12pm</th><th>12pm-01pm</th><th>01pm-02pm</th><th>02pm-03pm</th><th>03pm-04pm</th><th>04pm-05pm</th></tr>
+            <tr>
+                <th></th><th>09am-10am</th><th>10am-11am</th><th>11am-12pm</th><th>12pm-01pm</th><th>01pm-02pm</th><th>02pm-03pm</th><th>03pm-04pm</th><th>04pm-05pm</th>
+            </tr>
         </thead>
         <tbody>
             <tr class="even">
-                <td class="dayCell"><strong>Mon</strong></td>
+                <td class="dayCell">
+                    <div class="vertical-text">Monday</div>
+                </td>
                 <td><ul><li>Leon Smalov (csx211 at coventry.ac.uk)</li><li>Bob Bird (robert.bird@coventry.ac.uk)</li></ul></td><td><ul><li>Bob Bird (robert.bird@coventry.ac.uk)</li></ul></td><td><ul><li>Mark Tyers (aa7401@coventry.ac.uk)</li><li>David Jones (ac1243@coventry.ac.uk)</li><li>Jianhua Yang (ab7896@coventry.ac.uk)</li><li>Zahir Ahmad (ab7175@coventry.ac.uk)</li><li>Diana Hintea (ab8351@coventry.ac.uk)</li></ul></td><td><ul><li>John Halloran (aa1910@coventry.ac.uk)</li><li>Michael Odetayo (csx190@coventry.ac.uk)</li></ul></td><td><ul><li>John Halloran (aa1910@coventry.ac.uk)</li><li>Faiyaz Doctor (aa9536@coventry.ac.uk)</li></ul></td><td><ul><li>Maurice Hendrix (ab0776@coventry.ac.uk)</li><li>Hong Guo (csx270@coventry.ac.uk)</li></ul></td><td><ul><li>Saad Amin (s.amin@coventry.ac.uk)</li><li>Peter Every (csx241@coventry.ac.uk)</li><li>Maurice Hendrix (ab0776@coventry.ac.uk)</li></ul></td><td><ul><li>Saad Amin (s.amin@coventry.ac.uk)</li><li>Norlaily Yaacob (n.yaacob@coventry.ac.uk)</li><li>Qin Zhou (q.zhou@coventry.ac.uk)</li><li>Yih-Ling Hedley (aa0817@coventry.ac.uk)</li></ul></td>
             </tr>
-            <tr class="odd"><td class="dayCell"><strong>Tue</strong></td>
+            <tr class="odd">
+                <td class="dayCell">
+                    <div class="vertical-text">Tuesday</div>
+                </td>
                 <td><ul><li>Rabat Iqbal (as0535@coventry.ac.uk)</li><li>Kostas Gyftakis (ac1214@coventry.ac.uk)</li></ul></td>
                 <td><ul><li>Rabat Iqbal (as0535@coventry.ac.uk)</li><li>James Shuttleworth (csx239@coventry.ac.uk)</li><li>Kostas Gyftakis (ac1214@coventry.ac.uk)</li><li>Omar Salih (omar.salih@coventry.ac.uk)</li><li>Aamer Saleem (ac0027@coventry.ac.uk)</li></ul></td>
                 <td><ul><li>Rachid Anane (csx220)</li><li>Aamer Saleem (ac0027@coventry.ac.uk)</li></ul></td><td><ul><li>Siraj Shaikh (siraj.shaikh@coventry.ac.uk)</li><li>Michael Odetayo (csx190@coventry.ac.uk)</li><li>Rachid Anane (csx220)</li></ul></td>
@@ -112,6 +136,8 @@
                 <td><ul><li>Derrick Newton (ab3729@coventry.ac.uk)</li><li>Neophytos Lophitis (n.lophitis@coventry.ac.uk)</li></ul></td>
                 <td><ul><li>Derrick Newton (ab3729@coventry.ac.uk)</li><li>Cristina Fratila (ab7872@coventry.ac.uk)</li></ul></td>
                 <td><ul><li>Xiang Fei (aa5861@coventry.ac.uk)</li></ul></td>
+                <td><ul><li>No support available :(</li></ul></td>
+                <td><ul><li>No support available :(</li></ul></td>
             </tr>
         </tbody>
     </table>
@@ -124,15 +150,18 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
     
 </body>
+
+<footer class="container-fluid bg-4 text-center">
+    <style type="text/css">
+        .bg-4 {
+            background-color: blue;
+            color: white;
+            padding: 29px;
+        }
+    </style>
+    <p>Developed by Team Cresit</p>
+</footer>
 
 </html>
